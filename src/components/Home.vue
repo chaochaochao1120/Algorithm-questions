@@ -1,9 +1,9 @@
 <template>
     <div class="home">
         <ul class="list">
-            <li><router-link to="practice1">1、这是第一道题</router-link></li>
-            <li><router-link to="practice2">2、这是第二道题</router-link></li>
-            <li><router-link to="practice3">3、这是第三道题</router-link></li>
+            <li><router-link to="practice1">1、两数之和</router-link></li>
+            <li><router-link to="practice2">2、无重复字符的最长子串</router-link></li>
+            <li><router-link to="practice3">3、寻找两个正序数组的中位数</router-link></li>
         </ul>
     </div>
 </template>
@@ -35,6 +35,7 @@
 
                 a{
                     text-decoration: none;
+                    color: black;
                 }
             }
         }

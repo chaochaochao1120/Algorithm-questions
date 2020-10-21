@@ -6,7 +6,7 @@ Vue.use(VueRouter)
 const routes = [
     {
         path: '/',
-        name: 'Home',
+        name: '/',
         component: () => import('../components/Home.vue')
     },
     {
@@ -32,4 +32,4 @@ const router = new VueRouter({
     routes
 })
 
-export default router
+export default router;
