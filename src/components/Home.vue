@@ -1,9 +1,7 @@
 <template>
     <div class="home">
         <ul class="list">
-            <li><router-link to="practice1">1、两数之和</router-link></li>
-            <li><router-link to="practice2">2、无重复字符的最长子串</router-link></li>
-            <li><router-link to="practice3">3、寻找两个正序数组的中位数</router-link></li>
+            <li v-for="(item, index) in list" :key="index"><router-link :to="item.path">{{item.title}}</router-link></li>
         </ul>
     </div>
 </template>
@@ -12,7 +10,26 @@
     export default {
         name: 'Home',
         data() {
-            return {}
+            return {
+                list: [
+                    {
+                        title: "1、两数之和",
+                        path: "practice1"
+                    },
+                    {
+                        title: "2、无重复字符的最长子串",
+                        path: "practice2"
+                    },
+                    {
+                        title: "3、寻找两个正序数组的中位数",
+                        path: "practice3"
+                    },
+                    {
+                        title: "4、最长回文子串",
+                        path: "practice4"
+                    },
+                ],
+            }
         }
     }
 </script>
@@ -28,14 +45,23 @@
             list-style: none;
 
             li{
-                line-height: 35px;
-                width: 100%;
-                text-align: center;
+                line-height: 50px;
+                width: 50%;
+                height: 50px;
                 font-size: 20px;
+                background: #e8f3fe;
+                color: #7dbcfc;
+                margin: 10px auto;
+                box-sizing: border-box;
+                padding-left: 50px;
 
                 a{
                     text-decoration: none;
-                    color: black;
+                    color: #000;
+
+                    &:hover{
+                        color: #7dbcfc;
+                    }
                 }
             }
         }
