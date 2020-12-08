@@ -29,6 +29,16 @@ const routes = [
         name: 'practice4',
         component: () => import('../views/practice4.vue')
     },
+    {
+        path: '/practice5',
+        name: 'practice5',
+        component: () => import('../views/practice5.vue')
+    },
+    {
+        path: '/practice6',
+        name: 'practice6',
+        component: () => import('../views/practice6.vue')
+    },
 ]
 
 const router = new VueRouter({

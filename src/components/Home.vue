@@ -28,6 +28,14 @@
                         title: "4、最长回文子串",
                         path: "practice4"
                     },
+                    {
+                        title: "5、Z 字形变换",
+                        path: "practice5"
+                    },
+                    {
+                        title: "6、整数反转",
+                        path: "practice6"
+                    },
                 ],
             }
         }
@@ -43,6 +51,7 @@
             width: 100%;
             height: 100%;
             list-style: none;
+            padding: 0;
 
             li{
                 line-height: 50px;
