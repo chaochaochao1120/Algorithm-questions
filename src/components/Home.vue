@@ -36,6 +36,10 @@
                         title: "6、整数反转",
                         path: "practice6"
                     },
+                    {
+                        title: "7、回文数",
+                        path: "practice7"
+                    },
                 ],
             }
         }
