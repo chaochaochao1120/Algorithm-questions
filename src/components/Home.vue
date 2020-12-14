@@ -40,6 +40,10 @@
                         title: "7、回文数",
                         path: "practice7"
                     },
+                    {
+                        title: "8、罗马数字转整数",
+                        path: "practice8"
+                    },
                 ],
             }
         }

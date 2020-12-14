@@ -15,7 +15,7 @@
 
 <script>
     export default {
-        name: "practice5",
+        name: "practice6",
         data(){
             return {
                 num: 3123,

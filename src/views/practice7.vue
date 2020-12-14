@@ -1,5 +1,5 @@
 <template>
-    <div class="practice6">
+    <div class="practice7">
         <p>回文数</p>
         <p>示例 1:</p>
         <p>输入: 123</p>
@@ -15,7 +15,7 @@
 
 <script>
     export default {
-        name: "practice5",
+        name: "practice7",
         data(){
             return {
                 num: 121,
