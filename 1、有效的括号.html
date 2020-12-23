@@ -37,10 +37,10 @@
 -->
 </body>
 <script>
-    function fn(){
+    function fn() {
         let str = "([()})";
         let newStr = str.split("");
-        if (newStr.length%2) return false
+        if (newStr.length % 2) return false
         let list = [];
         for (let i = 0; i < newStr.length; i++) {
             switch (newStr[i]) {
@@ -58,20 +58,20 @@
                     break;
                 }
                 case ")": {
-                    if(list.pop() !== "(") {
+                    if (list.pop() !== "(") {
                         return false
                     }
                     break;
                 }
 
                 case "]": {
-                    if(list.pop() !== "[") {
+                    if (list.pop() !== "[") {
                         return false
                     }
                     break;
                 }
                 case "}": {
-                    if(list.pop() !== "{") {
+                    if (list.pop() !== "{") {
                         return false
                     }
                     break;
@@ -82,15 +82,16 @@
 
     }
 
-    console.log(fn());;
+    console.log(fn());
+    ;
 
-    var isValid = function(s) {
+    var isValid = function (s) {
         let arr = []
         let len = s.length
-        if (len%2) return false
+        if (len % 2) return false
         for (let i = 0; i < len; i++) {
             let letter = s[i]
-            switch(letter) {
+            switch (letter) {
                 case "(": {
                     arr.push(letter)
                     break;
