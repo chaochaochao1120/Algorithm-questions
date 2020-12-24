@@ -28,20 +28,16 @@
     console.log(strStr("bbaaaaa", "ba"));*/
 
     let strStr = function(haystack, needle) {
-        let temp = 0;
         for (let i = 0; i < haystack.length; i++) {
             for (let j = i; j < haystack.length; j++) {
                 if(haystack.substring(i, j) === needle){
-                    console.log(i);
-                    return;
-                }else{
-                    temp = -1;
+                    return i;
                 }
             }
         }
-        console.log(temp);
+        return -1;
     };
 
-    strStr("bbaaaaa", "");
+    console.log(strStr("bbaaaaa", "aaa"));
 </script>
 </html>
